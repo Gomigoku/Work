@@ -1,17 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BTRACK</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>Hello world! Gouthami</div>
-    <div class="text-box">
-        <p>I love coding</p>
+
+<section class="header">
+    
+    <nav>
+        <p>BTRACK</p>
+
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="greet">
+        <div class="icon">
+           <i class="fa fa-facebook"></i> <br>
+           <i class="fa fa-whatsapp"></i><br>
+           <i class="fa fa-linkedin"></i><br>
+
+        </div>
+    <div class="contents">
+        <h2>Hi, Welcome <br>
+        to</h2>
+        <h1>BTRACK <br>SOLUTION</h1>
+        <h3>Solution for <br> 
+        Semi & Un- <br>
+        Skilled Labours requirement</h3>
+    </div>    
+
+    <div class="setup">
+        <img src="images/1.png" alt="image of an setup">
+    </div>
+  
+</div>    
+
+    
+</section>
+
+<section class="about">
+    <div class="about_us">
+        <h1>About Us</h1>
+        <p>BTrack well-known establishment for one-stop destination servicing
+        customers both local and from other 
+        parts of Bangalore. Over the course 
+        of its journey, this business has established a firm foothold
+        in it’s industry. The belief that customer satisfaction
+        is as important as their products and services have helped this
+        establishment garner a vast base of customers, which continues to
+        grow by the day. This business employs individuals that are dedicated
+        towards their respective roles and put in a lot of effort to achieve
+         the common vision and larger goals of the company.</p>
+        <button class="btn" type="button">Download <img src="images/dl.png" alt="arrow"></button>
+     
+    </div>
+    <div class="services">
+        <h1>Services</h1>
+        <p>
+            Btrack Solution provide the best solutions to customers through 
+            innovation, commitment to quality, and strict compliance to standards. 
+            The service offered by us area benchmark. We adhere to be our best and dedicateour service
+            to create value to our customers.
+        </p>
+        
+            <button class="btn" type="button">Services<img src="images/arrow.png" alt="arrow"></button>
+        
+    </div>
+</section>
+
+<!--Image Slider-->
+
+<section class="slide-container">  
+        <div class="slide-fade">
+            <img src="images/h.png" alt="hr">
+             <h1>HR Services</h1>
+             <p>Btrack provides payroll management to mobilize personnel resources
+                effectively.Documentation of payroll is application based to track attendence.
+                Automated leave management ensures a transparent process and pay slip processing 
+                easy. </p>
+        </div>
+        <div class="slide-fade">
+            <img src="images/f.png" alt="hr">
+            <br>
+            <h1>Facility Management</h1>
+            <p>Btrack aims at providing trained Professionals,
+                uncompromised on quality at affordable price.
+                We are a reliable, dedicated team that strives to achieve
+                to achieve our commitment.
+            </p>
+        </div>
+        <div class="slide-fade">
+            <img src="images/p.png" alt="hr">
+            <h1>Contract Staffing</h1>
+            <p>Btrack is commited to provide staffs/personnel to ensure 
+                continuous productivity. The hiring process is automated, 
+                and fast for immediate posting.
+            </p>
+            
+        </div>
+        <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+</section>
+
+
+<!--Contact Us Form-->
+
+<section class="details-form">
+    <div class="details"> 
+        <h2><i class="fa fa-phone"></i>Call Me</h2>
+        <h3>+91 9876543210</h3>
+        <h2><i class="fa fa-envelope"></i>Email</h2>
+        <h3>abc@gmail.com</h3>
+        <h2><i class="fa fa-map-marker"></i>Location<h3>#301/284, Lakshmi complex, Yalahanka, Bangalore 64</h3></h2>
+        
+    </div>
+    
+    <div class="user-data">
+
+        <form class="Contact"> 
+            <input type="text" id="name" name="fname" placeholder="Name">
+            <input type="text" id="email" name="email" placeholder="Email"><br>
+            <select id="serve" name="serve">
+                <option value="service 1">Service 1</option>
+                <option value="service 2">Service 2</option>
+                <option value="service 3">Service 3</option>
+                <option value="service 4">Service 4</option>
+            </select>
+            <br>
+            <input type="text" id="placeholder"  placeholder="Description" size="100"><br>
+            <button class="btn" type="button">SUBMIT<i class="fa fa-arrow-circle-o-right"></i></button> 
+
+        </form>
+    </div>
+    
+</section>
+
+<!-----Footer Section------->
+
+<section class="footer">
+    <div class="com-descrip">
+        <h2>BTrack  Solution</h2> <br>
+        <h3>Future Employee Solutions</h3>
     </div>
 
+    <div class="security">
+        <h3>Security & House &emsp; Keeping Payroll Management &emsp; Employee  Contractor</h3>
+    </div>
+
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-envelope"></i>
+    </div>
+
+    <div class="footer-bottom">
+        &copy;2021 BTrack Solution Pvt. Ltd. All Rights Reserved.
+    </div>
+
+    
+
+</section>
+<!---JavaScript for Toggle Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+function showMenu()
+{
+    navLinks.style.right="0";
+}
+
+function hideMenu()
+{
+    navLinks.style.right="-200px";
+}
+</script>
     
 </body>
 </html>
