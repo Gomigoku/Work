@@ -1,17 +1,237 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BTRACK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <div>Hello world! Gouthami</div>
-    <div class="text-box">
-        <p>I love coding</p>
+
+<section class="header">
+    <nav>
+        <p>BTRACK</p>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul id="menuLinks"> 
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+</section>    
+
+<div class="container">
+    <div class="social-banner">
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+        </div>
+        <div class="icons">
+            <i class="fa fa-whatsapp"></i>
+        </div>
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+        </div>
+       
+       
+       
+
+    </div>
+    <div class="banner-content">
+        <div class="title">
+            Hi, Welcome to 
+        </div>
+        <div class="title-content">
+            BTRACK  SOLUTION
+        </div>
+        <div class="title-end">
+            Solution for Semi & <br> Unskilled Labour Requirement
+        </div>
+    </div>
+    <div class="banner-image">
+        <img src="images/1.png" alt="banner">
     </div>
 
+</div>
+   
+
+    
+
+
+<div class="about">
+    <div class="about_us">
+        <h1>About Us</h1>
+        <p>BTrack well-known establishment for one-stop destination servicing
+        customers both local and from other 
+        parts of Bangalore. Over the course 
+        of its journey, this business has established a firm foothold
+        in it’s industry. The belief that customer satisfaction
+        is as important as their products and services have helped this
+        establishment garner a vast base of customers, which continues to
+        grow by the day. This business employs individuals that are dedicated
+        towards their respective roles and put in a lot of effort to achieve
+         the common vision and larger goals of the company.</p>
+        <div class="btn">
+            <button class="about-button" type="button">Download <img src="images/dl.png" alt="arrow"></button>
+
+        </div> 
+        
+     
+    </div>
+    <div class="services">
+        <h1>Services</h1>
+        <p>
+            Btrack Solution provide the best solutions to customers through 
+            innovation, commitment to quality, and strict compliance to standards. 
+            The service offered by us area benchmark. We adhere to be our best and dedicateour service
+            to create value to our customers.
+        </p>
+        <div class="btn">
+            <button class="about-button" type="button">Services<img src="images/ar.png" alt="arrow"></button>
+
+        </div>
+            
+        
+    </div>
+</div>
+
+
+
+<div class="details-form">
+    <div class="Contact-heading">
+        CONTACT US
+    </div>
+
+<div class="full-container">
+    <div class="container-1">
+          
+    <div class="containers">
+       <div class="image-box">
+          <i class="fa fa-phone"></i>
+       </div>
+       <div class="detail-content">
+          <div class="content-box1">
+              Call Me
+          </div>
+          <div class="content-box2">
+              +91 6361372514
+          </div>
+        </div> 
+    </div>    
+
+    <div class="containers">
+       <div class="image-box">
+           <i class="fa fa-envelope"></i>
+        </div>
+       <div class="detail-content">
+           <div class="content-box1">
+               Email
+           </div>
+        <div class="content-box2">
+            abc@gmail.com
+        </div>
+       </div> 
+    </div> 
+
+    <div class="containers">
+       <div class="image-box">
+           <i class="fa fa-map-marker"></i>
+       </div>
+       <div class="detail-content">
+           <div class="content-box1">
+                Location
+           </div>
+           <div class="content-box2">
+                #301/284, Lakshmi <br> Complex, Yalahanka, <br> Bangalore 64
+           </div>
+
+        </div>
+
+    </div>
+    </div>
+    
+    <div class="container-1">
+    <div class="user-data">
+        <div class="user-data-input">
+            <input type="text" id="name" name="fname" placeholder="Name">
+            <input type="text" id="email" name="email" placeholder="Email"><br>
+    
+        </div>
+            <select class="contact-info" id="serve" name="serve">
+                <option value="service 1">Service 1</option>
+                <option value="service 2">Service 2</option>
+                <option value="service 3">Service 3</option>
+                <option value="service 4">Service 4</option>
+            </select>
+            <textarea class="descript" type="text" placeholder="Description" rows="10" spellcheck="false"></textarea>
+            <button class="submit-btn" type="button">SUBMIT<i class="fa fa-arrow-circle-o-right"></i></button> 
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-----Footer Section------->
+<div class="Footer">
+    <div class="Footer-conatiner">
+        <div class="footer-logo">
+            <div class="footer-logo-content">Btrack Solution</div>
+            <p>Future Employee Solutions</p>
+        </div>
+        <div class="footer-nav-links">
+            <div class="footer-nav-items">Security & House Management</div>
+            <div class="footer-nav-items">Payroll Management</div>
+            <div class="footer-nav-items">Employee Contractor</div>
+        </div>
+        <div class="footer-social">
+            <div class="footer-social-fb">
+                <i class="fa fa-facebook"></i>
+
+            </div>
+            <div class="footer-social-what">
+                <i class="fa fa-whatsapp"></i>
+
+            </div>
+            <div class="footer-social-mail">
+                
+                 <i class="fa fa-envelope"></i>
+
+            </div>
+            <div class="footer-social-ld">
+                <i class="fa fa-linkedin"></i>
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer-copyright">
+        &copy; 2021 BTrack Solution Pvt. Ltd. All Rights Reserved
+    </div>
+</div>
+
+<!---JavaScript for Toggle Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+function showMenu()
+{
+    navLinks.style.right="0";
+}
+
+function hideMenu()
+{
+    navLinks.style.right="-200px";
+}
+</script>
     
 </body>
 </html>
