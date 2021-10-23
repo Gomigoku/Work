@@ -7,24 +7,36 @@
 
 .header{
     width:100%;
-    font-size: 25px;
+    font-size: 10px;
     font-style: normal;
-    font-weight: 600;
+   
     
 }
 
 
 nav{
     display:flex;
-    padding:2% 6%;
-    justify-content: space-between;
+    top:0px;
+    right:0px;
+    left:0px;
+    z-index: 1;
+    padding:0.4rem 0px;
+    flex-direction:row;
     align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.904);
+    transition: all 0.5s ease-in-out 0s;
+    transform: translateY(-0.3rem);
 
 }
 
-p{
+.header p{
     font-size: 30px;
     font-family: sans-serif;
+    margin-left: 10%;
+    font-weight: 900;
+    color:black;
   
 }
 .nav-links{
@@ -36,14 +48,20 @@ p{
 .nav-links ul li{
     list-style: none;
     display:inline-block;
-    padding: 10px 20px;
+    padding: 60px 60px;
     
 }
+
 
 .nav-links ul li a{
     color:#000;
     text-decoration: none;
     font-size:20px;
+}
+
+nav ul li a:hover{
+    color: #5c2fff;
+
 }
 
 .nav-links ul li::after{
@@ -66,10 +84,11 @@ p{
 .container{
     display:flex;
     flex-direction: row;
-    padding: 5rem 5% 0px;
+    padding: 15rem 10% 0px;
     align-items: center;
     justify-content: space-between;
-    align-content: center;
+  
+
 
 }
 
@@ -90,8 +109,8 @@ p{
 }
 
 .icons .fa{
-    height:40px;
-    width:40px;
+    height:60px;
+    width:60px;
     color:blueviolet;
    
 }
@@ -126,26 +145,37 @@ p{
    display:flex;
    flex-direction:column;
    margin: 20px;
+   width:30%;
   
+  
+   
+}
+.banner-image img{
+    
+    width:100%;
    
 }
 
 
 .about{
-   
-    padding:5%;
-    flex-direction: row;
+    display:flex;
+    flex-direction: column;
+    padding:3rem 10% 10px;
 
+
+}
+
+.about p{
+    opacity: 0.7;
+    font-family: Calibri;
+    font-size: 20px;
+    color:black;
 }
 
 
 .about_us{
-    flex-basis:30%;
     border-radius:10px;
-    margin-bottom:5%;
     padding:20px 12px;
-    box-sizing:border-box;
-   
 }
 
 .about_us h1{
@@ -158,36 +188,38 @@ p{
     flex-direction: row;
     align-items: center;
     padding:30px 40px;
+    color:black;
 }
 
+.services .btn{
+    border:10px;
+}
 
 .btn{
-    
-    margin:auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color:rgb(162, 0, 255);
-    border:none;
+    display:flex;
     cursor:pointer;
     justify-content: center;
-    display:inline-block;
-    
+    align-items:center;
+    border-radius: 10px;
+
+}
+
+.about-button{
+    background-color: blueviolet;
+    border-radius: 5px;
+
+
 }
 
 .btn img{
-    height: 15px;
+    height:15px;
     width:15px;
-    text-align: right;
-    background-color: rgb(162, 0, 255);
-    padding:4px 1px 1px 0.1px;
-    position:relative;
+    background-color: blueviolet;
+    border-radius: 5px;
 }
 
-.btn:hover{
-    border:1px solid rgb(162, 0, 255);
-    background:rgb(162, 0, 255);
+.btn .about-button:hover{
+    border:1px solid white;
     transition:0.5s;
 
 }
@@ -195,57 +227,206 @@ nav .fa{
     display:none;
 }
 
-@media(max-width:600px){
-       .about_us p{
-           font-size:20px;
+
+
+.containers{
+    display:flex;
+}
+
+
+
+.details-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*padding:10rem 10% 0px;*/
+
+}
+
+
+
+.image-box {
+    margin:10px;
+    width:10px;
+    height:10px; 
+    color: blueviolet;
+    cursor:pointer;
+    padding: 1rem 10px;
+
+}
+.image-box .fa{
+    height:10px;
+    width: 10px;
+
+}
+
+
+.detail-content{
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    align-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.content-box1{
+    font-size: 20px;
+  
+
+}
+
+
+.content-box2{
+    opacity:0.5rem;
+    color: gray;
+
+}
+
+.Contact-heading{
+    font-family: Calibri;
+    font-size:2.5rem;
+    text-align: center;
+    padding:3rem;
+}
+
+.user-data{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    flex: 0 0 60%;
+}
+
+.full-container{
+    display:flex;
+    flex-direction: row;
+    padding:3rem;
+    justify-content:center;
+}
+
+.container-1{
+    display:flex;
+    flex-direction:column;
+}
+.user-data-input{
+    display:flex;
+    margin:15px 15px 1rem;
+    justify-content: space-between;
+    height:40px;
+    
+}
+.user-data-input #name{
+    background-color: rgb(240, 236, 236);
+    border:none;
+}
+
+.user-data-input #email{
+    background-color: rgb(240, 236, 236);
+    border:none;
+    padding:5px 5px;
+
+}
+
+.contact-info{
+    display:flex;
+    margin:15px 15px 1rem;
+    padding:1rem;
+    background-color:rgb(240, 236, 236);
+    height:30px;
+    width:300px;
+    border:none;
+
+}
+
+.descript{
+    margin:15px 15px 1rem;
+    background-color:rgb(240, 236, 236);
+    height:300px;
+    width:300px;
+    align-content: center;
+    border:none;
+
+}
+
+.submit-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    margin: 5px;
+    width:100px;
+
+}
+
+
+
+
+@media only screen and (max-width:600px){
+        .nav-links ul li{
+            display:block;
+        }
+        .nav-links{
+            position:absolute;
+            background: #5c2fff;
+            height:100vh;
+            width:200px;
+            top:0;
+            right:-200px;
+            text-align:left;
+            z-index:2;
+            transition:1s;
+
+        }
+
+        .nav
+        #menuLinks{
+            flex-direction:column; 
+        }
+        .full-container{
+            flex-direction:coulmn;
+
+        }
+
+        .Footer{
+            padding:2rem 1.5rem;
+            flex-direction: column;
+        }
+        .Footer-conatiner{
+            flex-direction:coulmn;
+            justify-content: center;
+            
+        }
+        .footer-nav-links{
+            margin-top:0.1rem;
+            flex-direction: column;
+
+        }
+
+        .footer-bottom{
+            font-size:30px;
+        }
+
+       .container{
+           flex-direction:column;
+       }
+       .details-form{
+           flex-direction:column;
        }
 
-       .nav-links ul li{
-           display:block;
-
+       .social-banner{
+           flex-direction:row;
+           order:3;
        }
-       .nav-links{
-           position:fixed;
-           background:rgb(162, 0, 255);
-           height:100vh;
-           width:200px;
-           top:0;
-           right:-200px;
-           text-align: left;
-           z-index:10;
-           transition:1s;
-
+       .banner-content{
+           order:2;
        }
-
-       nav .fa{
-        display:block;
-        color:rgb(228, 30, 228);
-        cursor:pointer;
-        font-size: 22px;
-    }
-    #menuLinks{
-        overflow:hidden;
-        transition: 0.5s;
-
-    }
-    .container{
-        display:blcok;
-        flex-direction: column-reverse;
-    }
 }
 
 
 .services{
-    flex-basis:30%;
-    
     border-radius:10px;
-    margin-bottom:5%;
     padding:20px 12px;
-    box-sizing:border-box;
 }
-
-
-
 
 .services h1{
     text-align: center;
@@ -255,212 +436,93 @@ nav .fa{
     text-align: center;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
     padding:30px 40px;
 }
 
-.hr-services{
-    margin:10%;
-    padding:5%;
-
-}
-
-.slide-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100px;
-    margin: auto;
-    position: relative;
-     
-  
-
-}
- 
-
-.slide-fade {
-    display: flex;
-    height:100px;
-    
-
-        
-}
-
-.slide-fade p{
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    
-    width:50;
-}
-
-/*------Contact Us------*/
-
-.details-form{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 250;
-    height:300px;
-    
-   
-
-}
-
-.details-form .deatails{
-    display:flex;
-    text-align: justify;
-    align-content: space-between;
-   
-
-}
-
-.details img{
-    height:40;
-    width:40;
-    align-content: space-between;
-   
-
-
-}
-.details h2{
-    font-size: 100%;
-  
-   
-
-
-
-}
-
-.details h3{
-    font-size:100%;
-    
-    color:gray;
-
-
-}
 /*----------Footer-------*/
 
 .footer{
-   
     background-color: blueviolet;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     display:flex;
-    height:300px;
-    position:relative;
-    
-
+    padding:3rem 10%;
+    width:auto;
 
 }
 
-.com-descrip{
-    flex-basis:20%;
-    padding:10px 10px;
-   
 
+.Footer-conatiner{
+    display: flex;
+    flex-direction:row;
+    padding:2rem;
 }
 
-.com-descrip h2{
-    color: white;
-    height:5%;
-    padding-top: 15%;
-    padding-bottom: 10%;
-    padding-left: 20%;
-    flex-wrap: wrap;
-    flex-direction: row;
-
+.footer-logo-content{
+    color:white;
+    font-size: 40px;
     
 }
-
-
-.com-descrip h3{
+p{
     color:white;
-    height:10px;
-    padding-top:5px;
-    padding-left:20%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    font-family: sans-serif;
+    margin-top: 0px;
 }
-
-.security{
+.footer-nav-links{
     color:white;
-    width:50%;
-}
-
-.security h3{
-    padding-bottom: 10px;
-    padding-top:10%;
-    padding-left: 5px;
-    padding-right: 5px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    width:100%;
-    font-family: sans-serif;
-   
-
-}
-
-
-
-.footer .icon{
+    font-size: 25px;
+    /*margin:20px;*/
+    padding:2rem;
     display:flex;
-    text-align:left;
-    align-items: flex-start;
-    flex-direction: row;
-    width:20%;
-    padding-top:5%;
-
+    flex-direction:row;
+    margin-top:0px;
 
 }
 
-.icon i{
-    height:1px;
-    width:10px;
-   
-
-}
-
-.icon  .fa {
-   color:white;
-   padding:25px 25px;  
-   cursor:pointer;
-   flex-wrap: wrap;
-   flex-direction: column;
-
-  
-
+.footer-social{
+   display:flex;
+   flex-direction: row;
+   justify-content:space-between;
+   padding:2rem;
    
 }
 
-.foot{
-    margin:auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.footer-bottom{
-    
-    margin:auto;
+.footer-social-fb{
     color:white;
-    position:absolute;
-    width:100%;
-    text-align: center;
-    bottom:5px;
-    left:0px;
-    padding-top:20px;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-
+    padding:7px;
+    height:30px;
+    width:30px;
 }
 
 
+.footer-social-what{
+    color:white;
+    padding:7px;
+    height:30px;
+    width:30px;
+}
 
+.footer-social-ld{
+    color:white;
+    padding:7px;
+    height:30px;
+    width:30px;
+}
 
+.footer-social-mail{
+    color:white;
+    padding:7px;
+    height:30px;
+    width:30px;
+}
 
+.footer-copyright{
+    color:white;
+    display: flex;
+    justify-content: center;
+    padding:1rem;
+
+}
 
 
 
